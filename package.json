@@ -1,0 +1,24 @@
+{
+  "name": "mattermost-login-adapter",
+  "version": "1.0.0",
+  "description": "A node server to act as a custom login service for open-source edition of Mattermost",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d dist",
+    "start": "npm run build && node dist/server.js",
+    "watch": "nodemon start",
+    "serve": "node dist/server.js"
+  },
+  "author": "TVeal",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1"
+  }
+}
